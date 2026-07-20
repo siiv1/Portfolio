@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@font-face {
+  font-family: 'Jacquarda Bastarda';
+  src: url(../Fonts/Jacquarda_Bastarda_9/JacquardaBastarda9-Regular.ttf) format('truetype');
+}
+@font-face {
+   font-family: 'Inconsolata';
+  src: url(../Fonts/Inconsolata/static/Inconsolata_Condensed-Black.ttf)
+}
+
+/*NAVIGATION*/
+#main-nav {
+    font-family: 'Jacquarda Bastarda';
+    background-color:rgb(221, 218, 234);
+    color: var(--background-color);
+    justify-content: center;
+}
+
+#main-nav h1 {
+    font-family:'Jacquarda Bastarda';
+    color: #180545;
+    margin: 0;
+    font-size: 60px;
+}
+
+/*TABS*/
+#tab-nav {
+    padding-bottom: 0;
+    font-family: 'Jacquarda Bastarda';
+    background-color:#0d0423;
+    color: var(--background-color);
+    border-top: aliceblue;
+    justify-content: center;
+}
+/*BODYHEADER*/
+#tab-nav h1 {
+    font-family: 'Jacquarda Bastarda';
+    color: #180545;
+    margin: 0;
+    font-size: 40px;
+}
+
+#tab-nav ul{
+    min-width: fit-content;
+    display: flex;
+    justify-content:center; 
+}
+#tab-nav li{
+    margin: 0.5em;
+    padding: 0.1em;
+    display: inline-block;
+    list-style: none;
+    border-color: #5DA3BC;
+    border-style: groove;
+    background-color: #fcf8e7;
+}
+#tab-nav a {
+  color: var(--background-color);
+  text-decoration: none;
+  margin: 2px;
+}
+/*TAB NAV COLOR*/
+#currTab {
+    color:#fcf8e7;
+}
+
+/*BODY*/
+
+h1{
+    font-family: 'Inconsolata';
+    font-size:2em;
+    text-align: center;
+    color: rgb(176, 120, 0);
+    display: block;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+h2{
+    font-family: "Passion One", "Roboto", sans-serif;
+    font-size:1.5em;
+    text-align: center; 
+    color: #FFFFFF;
+    background-color:inherit;
+    display: block;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+h3{
+    font-family: "Passion One", "Roboto", sans-serif;
+    font-size: 2em;
+    text-align: center; 
+    color: #C3504D;
+    background-color: #F9FCE7;
+    display: block;
+    white-space: nowrap;
+    margin:  auto;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.flex-container{
+    display: flex;
+    padding: .5em;
+}
+nav{
+    width: 100%;
+    text-align: center;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: contents;
+}
+.burger{
+    display: block;
+    text-align: right;
+    line-height: 0;
+}
+.burger img{
+    width: 25px;
+    height: 25px;
+    padding-right: 2%;
+}
+nav ul li{
+    margin-top: 2.5em;
+    padding: 0 1em;
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    color: wheat;
+    background: #ffffff00;
+    text-decoration: none;
+}
+fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: #c6e12f;
+}
+
+legend{
+    color: #F9FCE7;margin: auto 0;
+}
+.titleContainer{
+    background-color: #0d0423;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0em;
+}
+.titleContainer h1{
+    font-family: 'Inconsolata';
+    font-size: 6vw;
+}
+.titleContainer img{
+    max-width:20%;
+    max-height: 20%;
+    margin: auto;
+    padding-top: .5em;
+   
+}
+section {
+    margin: 0 auto;
+    background-color:#05020c ;
+}
+.gridContainer{
+    font-family: 'Inconsolata';
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    text-align: center;
+}
+.box{
+    font-size: .7em;
+}
+.box img{
+    max-width: 75%;
+    max-height: 75%;
+    border-radius: 50%;
+    border-style: solid;
+    border-width:medium;
+    border-color: #FFFFFF;
+}
+/*CARD HOLDER*/
+.flexContainer{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color:#0d0423;
+    margin: 0;
+    text-align:right;
+}
+.flexContainer h2{
+    font-family: 'Jacquarda Bastarda';
+    color: #180545;
+    margin: 0;
+    font-size: 30px;
+}
+.flexContainer div{
+    padding: 0;
+}
+/*CARDS*/
+.card{
+    max-width: 800px;
+    max-height: 600px;
+    background-color: #f2ebf5;
+    border-width: 4px;
+    border-color: aliceblue;
+    border-style: solid;
+    align-items: center;
+    padding: 0;
+    margin: 1em;
+}
+
+.card video{
+    width:100%;
+    height: auto;
+}
+.card img{
+    padding: 0px;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+.card h3{
+    font-family:monospace;
+    max-width: 100%;
+    font-size: 1.15em;
+    text-align: right;
+    color: aliceblue;
+    background-color:#0c0029;
+    padding: 0% 1% 1% 1%;
+}
+.card h4{
+    font-family: monospace;
+    max-width: 100%;
+    font-size: 1.25em;
+    /*line-height: 1em;*/
+    text-align: left;
+    color:azure;
+    background-color:#0c0029;
+    padding: 1% 2% 1% 1.5%;
+    margin: 0%;
+}
+
+.card p{
+    margin: 1em auto;
+    max-width: 90%;
+    max-height: 100%;
+    color: black;
+    text-align:left;
+    font-size: 1em;
+}
+/*LINKS*/
+a{
+    text-decoration:overline;
+}
+a:link{
+    color: #180545;
+}
+a:visited{
+    color: #180545;
+}
+a:hover{
+    color: #b7fdff;
+}
+a:active{
+    color: rgba(240, 248, 255, 0.731);
+}
+
+/*
+.orderContainer{
+    background-color:#C3504D;
+    max-width: 100%;
+    padding: 10%;
+    margin: 0 auto;
+    
+}
+
+.onlineOrder{
+    color: #FFFFFF;
+    background-color:#C3504D;
+    display:flex;
+    padding: 0;
+    flex-direction: column;
+}
+.onlineOrder div{
+    display: grid;
+    padding: .5em;
+}
+.onlineOrder legend{
+    text-align: left; 
+    line-height:2em;
+}
+.onlineOrderCheck{
+    color: #FFFFFF;
+    background-color:#C3504D;
+    display:flex;
+    margin: 1em;
+    flex-direction: column;
+}
+div .checkbox{
+    margin: 1em;
+}
+.onlineOrderSelect{
+    
+    color: #FFFFFF;
+    background-color:#C3504D;
+    display:grid;
+    padding: 0;
+}
+.onlineOrderSelect div{
+    display: grid;
+    margin: 1em;
+}
+*/
+hr{
+    width: 125px;
+
+}
+div p{
+    padding: 0em ;
+    font-family: 'Inconsolata', sans-serif;
+    line-height: 2em;
+}
+.submit-button{
+    padding: 1em; 
+    color: #C3504D;
+    font-family: 'Roboto', sans-serif; 
+    border-radius: 10px; 
+    border-style: none; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    width: 100%;
+    margin: 1em;
+ }
+div a{
+    background-color: rgba(0, 0 ,0, 0.4);
+    color: antiquewhite;
+    text-decoration: none;
+    padding: .75em 1.5em;
+    display: inline-block;
+    border-radius: .5em;
+    font-style: italic;
+}
+div a:hover{
+    text-decoration: underline;
+}
+
+
+@media only screen and (min-width: 618px) {
+    #tab-nav ul{
+    font-size:3vw;
+    }
+    .gridContainer{
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto ;
+    }
+    nav ul{
+        display:contents;
+    }
+    h1{
+        font-size: 3em;
+    }
+    .burger{
+        display: none;
+    }
+
+    /*.onlineOrder{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+    }
+    .onlineOrderSelect{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto ;
+    }
+    */
+    
+    body {
+
+        .flexContainer{
+          flex-direction:column ;
+        }
+        
+        .titleContainer{
+            flex-direction: row;
+        }
+        .titleContainer img{
+            max-width:10%;
+            max-height: 10%;
+            padding: .5em 0;
+            margin: auto;
+        }
+        .titleContainer h1{
+            padding: .5em 0;
+        }
+        .card {
+           min-width: 20%;
+        }
+
+        .onlineOrder div{
+            padding: 1em;
+        }
+        .submit-button{
+            max-width: 30%;
+        }
+      }
+    }
