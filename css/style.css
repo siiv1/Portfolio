@@ -94,14 +94,14 @@ h2{
     margin: 0 auto;
 }
 h3{
-    font-family: "Passion One", "Roboto", sans-serif;
+    font-family: monospace,"Passion One", "Roboto", sans-serif;
     font-size: 2em;
     text-align: center; 
-    color: #C3504D;
-    background-color: #F9FCE7;
+    color:azure;
+    /*background-color: #F9FCE7;*/
     display: block;
     white-space: normal;
-    margin:  auto;
+    margin:  0 ;
 }
 body{
     padding: 0;
@@ -234,6 +234,7 @@ section {
     max-height: 100%;
     display: block;
 }
+
 .card h3{
     font-family:monospace;
     overflow-wrap:break-word;
@@ -264,6 +265,23 @@ section {
     text-align:left;
     font-size: 1em;
 }
+
+/*Parallax card image*/
+.parallImage{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/ascension.png");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    border: #fcf8e7;
+    border-style: double;
+}
+
 /*LINKS*/
 a{
     text-decoration:overline;
