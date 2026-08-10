@@ -7,13 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body> 
-     <nav id="main-nav">
+    <nav id="main-nav">
         <div class="burger">
                 <img src="images/burger.svg" alt="burger menu!">
         </div>
-        <h1><a href="index.html">siiv</a></h1>
+        <h1><a href="index.html" title="Home">siiv</a></h1>
         <h2>salehsagid@gmail.com</h2>
     </nav>
+    
     <nav id="tab-nav">
         <ul>
             <li><a href="artwork.html">illustration</a></li>
@@ -32,11 +33,44 @@
 
     <h3 id="locs"></h3>
     <section class="flexContainer">
-        <div class="card">
+        <div class="card" style=" object-fit: cover">
+             <h4 style="text-decoration: underline;text-align: center;"><a href="https://siiv.itch.io/back-end-memories" title="Click to play game">Back End Memories</a></h4>
             
-            <img src="images/BackEndMemo.png" alt="An image of an ice cream store">
+
+            <h4>[EDUCATIONAL/NARRATIVE 2D PLATFORMER]</h4>
+            <h3>My senior capstone project exploring our relationship with technology. Play as a junkyard shephard trying to guide digital memories to a new life.</h3>
+            
+            <h4 style="font-size: .9em; padding: 3%; text-align: left;">Role: All (Environmental sprites by Kenny 1-bit assets)</br> Created with Unity & Piskel</h4>
+
+            <video poster="images/BackEndMemo.png" style="object-fit:cover;" playsinline controls>
+                <source src="videos/BEM.mp4" type="video/mp4">
+                <source src="videos/BEM_.webm" type="video/webm">
+                Your browser does not support the video tag. 
+            </video>
+            
+            <h3 style="text-align: center;color:#7cd5f6;">↓ click through slides ↓</h3>
+
+            <div class="carouselContainer">
+            <!-- Navigation Buttons -->
+            <button class="nav-btn prev" onclick="scrollCarousel(-1)">◀</button>
+            <button class="nav-btn next" onclick="scrollCarousel(1)">▶</button>
+
+            <div class="carousel" id="carousel">
+                <div class="carousel-slide">
+                    <img src="/images/fight_or_flight.png" alt="Spritesheets and movement keyframes">
+                </div>
+                <div class="carousel-slide">
+                    <img src="/images/fight_or_flight.png" alt="early examples of assets">
+                </div>
+                <div class="carousel-slide">
+                    <img src="/images/fight_or_flight.png" alt="some rough sketches and ideas">
+                </div>
+            </div>
+
         </div>
 
+        </div>
+        
         <div class="card">
             
             <img src="images/fight_or_flight.png" alt="An image of another ice cream store">
@@ -57,4 +91,12 @@
 
         
     </section>
+
+    <script>
+        function scrollCarousel(direction) {
+            const carousel = document.getElementById('carousel');
+            // Scrolls the container by its own width left or right
+            carousel.scrollBy({ left: direction * carousel.offsetWidth, behavior: 'smooth' });
+        }
+    </script>
 </body>
