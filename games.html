@@ -33,6 +33,8 @@
 
     <h3 id="locs"></h3>
     <section class="flexContainer">
+
+        
         <div class="card" style=" object-fit: cover">
              <h4 style="text-decoration: underline;text-align: center;"><a href="https://siiv.itch.io/back-end-memories" title="Click to play game">Back End Memories</a></h4>
             
@@ -51,30 +53,63 @@
             <h3 style="text-align: center;color:#7cd5f6;">↓ click through slides ↓</h3>
 
             <div class="carouselContainer">
-            <!-- Navigation Buttons -->
-            <button class="nav-btn prev" onclick="scrollCarousel(-1)">◀</button>
-            <button class="nav-btn next" onclick="scrollCarousel(1)">▶</button>
+                <!-- Navigation Buttons -->
+                <button class="nav-btn prev" onclick="scrollCarousel(-1)">◀</button>
+                <button class="nav-btn next" onclick="scrollCarousel(1)">▶</button>
 
-            <div class="carousel" id="carousel">
-                <div class="carousel-slide">
-                    <img src="/images/fight_or_flight.png" alt="Spritesheets and movement keyframes">
+                <div class="carousel" id="carousel">
+                    <div class="carousel-slide">
+                        <img src="/images/BEM_assets_final.png" alt="Spritesheets and movement keyframes">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/images/BEM_concepts.png" alt="early examples of assets">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/images/BEM_concepts2.png" alt="some rough sketches and ideas">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/images/Shephard_Sketch.jpg" alt="pencil sketches of the character, expressions, & ideas">
+                    </div>
                 </div>
-                <div class="carousel-slide">
-                    <img src="/images/fight_or_flight.png" alt="early examples of assets">
-                </div>
-                <div class="carousel-slide">
-                    <img src="/images/fight_or_flight.png" alt="some rough sketches and ideas">
-                </div>
+
             </div>
 
         </div>
-
-        </div>
         
-        <div class="card">
+        <div class="card" style=" object-fit: cover">
+             <h4 style="text-decoration: underline;text-align: center;"><a href="https://mrk161.itch.io/fight-or-flight" title="Click to play game">Fight or Flight</a></h4>
             
-            <img src="images/fight_or_flight.png" alt="An image of another ice cream store">
-           
+
+            <h4>[NARRATIVE 2.5D PLATFORMER]</h4>
+            <h3>Created in a team of 4 during a 24 hour game jam, with the theme of Migration. Help Peng the Penguin navigate his treacherous melting home, on a journey to find  new oppurtunity.</h3>
+            
+            <h4 style="font-size: .9em; padding: 3%; text-align: left;">Role: Concept Artist, 2D Background and  Character Artist</br> Created with GoDot & Clip Studio</h4>
+
+            
+            
+            <h3 style="text-align: center;color:#7cd5f6;">↓ click through slides ↓</h3>
+
+            <div class="carouselContainer">
+                <!-- Navigation Buttons -->
+                <button class="nav-btn prev" onclick="scrollCarousel(-1)">◀</button>
+                <button class="nav-btn next" onclick="scrollCarousel(1)">▶</button>
+
+                <div class="carousel" id="carousel">
+                    <div class="carousel-slide">
+                        <img src="/images/FightorFlight_First_15s.gif" alt="first 30 secs of the game and intro dialogue">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/images/FightorFlight_2nd_15s.gif" alt="early examples of assets">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/images/BEM_concepts2.png" alt="some rough sketches and ideas">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/images/FightorFlight_conceptArt.png" alt=" sketches of character portraits, references, & background art">
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <div class="card">
@@ -93,10 +128,33 @@
     </section>
 
     <script>
-        function scrollCarousel(direction) {
+        /*function scrollCarousel(direction) {
             const carousel = document.getElementById('carousel');
             // Scrolls the container by its own width left or right
             carousel.scrollBy({ left: direction * carousel.offsetWidth, behavior: 'smooth' });
-        }
+        }*/
+
+        // 1. Find all carousel wrappers on the page
+const carousels = document.querySelectorAll('.carouselContainer');
+
+carousels.forEach(wrapper => {
+  // 2. Find the elements strictly INSIDE this specific wrapper
+  const track = wrapper.querySelector('.carousel');
+  const prevBtn = wrapper.querySelector('.nav-btn.prev');
+  const nextBtn = wrapper.querySelector('.nav-btn.next');
+
+  // 3. Define how much to scroll (e.g., the width of one card)
+  const slide = track.querySelector('.carousel-slide');
+  const scrollAmount = slide.offsetWidth;
+
+  // 4. Attach event listeners locally
+  nextBtn.addEventListener('click', () => {
+    track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  });
+
+  prevBtn.addEventListener('click', () => {
+    track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  });
+});
     </script>
 </body>
