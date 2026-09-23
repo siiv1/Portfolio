@@ -501,8 +501,8 @@ div a:hover{
             flex-direction: row;
         }
         .titleContainer img{
-            max-width:10%;
-            max-height: 10%;
+            max-width:20%;
+            max-height: 20%;
             padding: .5em 0;
             margin: auto;
         }
